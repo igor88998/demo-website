@@ -1,0 +1,49 @@
+.content {
+	grid-area: c;
+}
+
+.mainPicture {
+	width: 1000px;
+	height: 210px;
+	margin: 20px 0px 20px 20px;
+}
+
+.userInfo {
+	font-size: 16px;
+	color: white;
+}
+
+.userName {
+	font-size: 25px;
+	font-wight: bold;
+}
+
+.myAvatar {
+	width: 140px;
+	height: 140px;
+	margin-right: 50px;
+}
+
+.item {
+  color: gray;
+}
+
+.profileContainer {
+	display: flex;
+	background-color: #393836;
+	padding: 20px;
+	align-items: center;
+}
+
+.editMode {
+	margin: 5px 0 20px 0 
+}
+
+.activateMode:hover {
+	background-color: #797776
+}
+
+.deactivateModeInput {
+	display: block;
+	width: 100%
+}

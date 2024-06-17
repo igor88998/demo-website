@@ -1,0 +1,20 @@
+.dialogsItems .active {
+	color: gold;
+}
+
+.dialog {
+	margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.myAvatar {
+	width: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.name {
+    color: #282826;
+    text-decoration: none;
+}

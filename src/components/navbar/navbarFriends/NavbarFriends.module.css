@@ -1,0 +1,15 @@
+.friendsInfo {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.friendsInfo a {
+    color: white;
+    text-decoration: none;
+}
+
+.circle {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: black;
+}

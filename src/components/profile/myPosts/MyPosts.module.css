@@ -1,0 +1,60 @@
+.content {
+	grid-area: c;
+	margin: 20px 0 20px 20px;
+}
+
+.myPost {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.newPost {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.createPost {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.createPostName {
+	margin-bottom: 20px;
+}
+
+.content img {
+	width: 1200px;
+	height: 700px;
+}
+
+.item {
+	color: gray;
+}
+
+.addPostForm {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #d7d8db;
+	border-radius: 20px;
+	padding: 5px 6px;
+}
+
+.postText {
+	display: flex;
+	border: none;
+	resize: none;
+	height: 20px;
+	align-items: center;
+	width: 330%;
+	outline: none;
+	padding: 5px 5px;
+	background-color: #d7d8db;
+}
+
+.addPostButton {
+	border: none;
+	height: 30px;
+	border-radius: 20px;
+}

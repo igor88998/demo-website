@@ -1,0 +1,54 @@
+.dialogs {
+	margin: 20px;
+}
+
+.dialogsHeading {
+	font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid #d7d8db;
+}
+
+.dialogsContainer {
+	display: flex;
+}
+
+.dialogsItems {
+	padding: 10px 60px 0px 0px;
+	border-right: solid #d7d8db;
+}
+
+.left {
+	margin-left: 460px;
+}
+
+.right {
+	margin-left: 50px;
+}
+
+.messageForm {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin: 40px 0 0 20px;
+	background-color: #d7d8db;
+	border-radius: 20px;
+	padding: 5px 6px;
+}
+
+.messageText {
+	display: flex;
+	border: none;
+	resize: none;
+	height: 20px;
+	align-items: center;
+	width: 330%;
+	outline: none;
+	padding: 5px 5px;
+	background-color: #d7d8db;
+}	
+
+.sendMessageButton {
+	border: none;
+	height: 30px;
+	border-radius: 20px;
+}

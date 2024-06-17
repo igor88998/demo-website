@@ -1,0 +1,55 @@
+.userContainer {
+    display: flex;
+    margin: 40px;
+}
+
+.userAvaAndStatus {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #d7d8db;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.userLocation {
+    
+    
+}
+
+.userPhoto {
+    width: 100px
+}
+
+.preloader {
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.unfollowButton {
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    color: white;
+    background-color: #d7d8db;
+    border: none;
+    cursor: pointer;
+}
+
+.followButton {
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    color: white;
+    background-color: #53b790;
+    border: none;
+    cursor: pointer;
+}

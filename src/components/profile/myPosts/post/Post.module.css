@@ -1,0 +1,26 @@
+.item {
+	display: grid;
+	grid-template-columns: 1fr 10fr;
+	color: #393836;
+	background-color: #f1f1f1;
+	margin-bottom: 10px;
+}
+
+.itemContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.promotion {
+	display: flex;
+	gap: 15px;
+}
+
+.item img {
+	width: 70px;
+	height: 70px;
+    border-radius: 50px;
+	margin: 5px
+}

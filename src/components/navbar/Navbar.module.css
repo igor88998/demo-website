@@ -1,0 +1,42 @@
+.nav {
+    grid-area: n;
+    background-color: #393836;
+    padding: 20px;
+    height: 110vh;
+}
+
+.navContainer {
+    background-color: #282826;
+    padding: 20px 20px 0px 20px;
+}
+
+.item {
+    padding-bottom: 15px;
+}
+
+.item a{ 
+    color: #797776;
+    text-decoration: none;
+}
+
+.item a.activeLink {
+    color: white;
+}
+
+.friendsContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navFriends {
+    margin: 50px 0 20px 0; 
+    color: white;
+}
+
+.friendsHeading {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
