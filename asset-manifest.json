@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/demo-website/static/css/main.dabfa919.css",
-    "main.js": "/demo-website/static/js/main.53ac48d5.js",
+    "main.css": "/demo-website/static/css/main.a1f0d863.css",
+    "main.js": "/demo-website/static/js/main.1c5f96eb.js",
     "static/js/453.da11ecde.chunk.js": "/demo-website/static/js/453.da11ecde.chunk.js",
     "static/media/friendAvatar.png": "/demo-website/static/media/friendAvatar.f9a6c4497888f2877e71.png",
+    "static/media/LegoLogo.png": "/demo-website/static/media/LegoLogo.a930709dfd5e5aa52cf7.png",
     "static/media/myAvatar.png": "/demo-website/static/media/myAvatar.4a471f7d75f9262d34f8.png",
-    "static/media/LegoLogo.png": "/demo-website/static/media/LegoLogo.762703844d9866cc8671.png",
     "static/media/preloader.svg": "/demo-website/static/media/preloader.473a56d3e07af2d9c81eace35b5cd5bf.svg",
     "static/media/userAvatar.png": "/demo-website/static/media/userAvatar.10691648d79aa2f92514.png",
     "index.html": "/demo-website/index.html",
-    "main.dabfa919.css.map": "/demo-website/static/css/main.dabfa919.css.map",
-    "main.53ac48d5.js.map": "/demo-website/static/js/main.53ac48d5.js.map",
+    "main.a1f0d863.css.map": "/demo-website/static/css/main.a1f0d863.css.map",
+    "main.1c5f96eb.js.map": "/demo-website/static/js/main.1c5f96eb.js.map",
     "453.da11ecde.chunk.js.map": "/demo-website/static/js/453.da11ecde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dabfa919.css",
-    "static/js/main.53ac48d5.js"
+    "static/css/main.a1f0d863.css",
+    "static/js/main.1c5f96eb.js"
   ]
 }
