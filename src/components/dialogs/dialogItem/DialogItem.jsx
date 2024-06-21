@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './DialogItem.module.css'
 import { NavLink } from 'react-router-dom';
+import friendAvatar from '../../../assets/images/friendAvatar.png'
 
 const DialogItem = ({ id, name }) => {
 
@@ -8,7 +9,7 @@ const DialogItem = ({ id, name }) => {
 
     return (
         <div className={classes.dialog + ' ' + classes.active}>
-            <img className={classes.myAvatar} src='/UserAvatar.png' alt='' />
+            <img className={classes.myAvatar} src={friendAvatar} alt='' />
             <NavLink className={classes.name} to={path}>{name}</NavLink>
         </div>
     )

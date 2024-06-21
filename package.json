@@ -1,8 +1,8 @@
 {
   "name": "react-app-1",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://igor88998.github.io/demo-website",
+  "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
@@ -26,6 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",

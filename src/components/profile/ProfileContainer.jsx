@@ -1,7 +1,7 @@
 import React from 'react'
 import Profile from './Profile';
 import { connect } from 'react-redux';
-import { toggleIsFetching, getUserProfile, getUserStatus, updateUserStatus } from '../../redux/profileReducer';
+import { toggleIsFetching, getUserProfile, getUserStatus, updateUserStatus, saveUserPhoto, saveProfile } from '../../redux/profileReducer';
 import { useParams } from 'react-router-dom';
 import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 import { compose } from 'redux';
@@ -15,7 +15,7 @@ export function withRouter(Children){
 
 class ProfileContainer extends React.Component {
 
-    componentDidMount() {
+    refreshProfile() {
         let userId = this.props.match.params.userId
         if(!userId) {
             userId = this.props.authorizedUserId
@@ -25,9 +25,26 @@ class ProfileContainer extends React.Component {
         this.props.getUserStatus(userId)
     }
 
+    componentDidMount() {
+        this.refreshProfile()
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.props.match.params.userId !== prevProps.match.params.userId) {
+            this.refreshProfile()
+        }
+    }
+
     render() {
         return (
-            <Profile {...this.props} profile={this.props.profile} status={this.props.status} updateUserStatus={this.props.updateUserStatus}/>
+            <Profile 
+                {...this.props} 
+                isOwner={!this.props.match.params.userId}
+                profile={this.props.profile} 
+                status={this.props.status} 
+                updateUserStatus={this.props.updateUserStatus}
+                saveUserPhoto={this.props.saveUserPhoto}
+                saveProfile={this.props.saveProfile}/>
         )
     }
 }
@@ -42,4 +59,4 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default compose(connect(mapStateToProps, { getUserProfile, toggleIsFetching, getUserStatus, updateUserStatus }), withRouter, withAuthRedirect)(ProfileContainer)
+export default compose(connect(mapStateToProps, { getUserProfile, toggleIsFetching, getUserStatus, updateUserStatus, saveUserPhoto, saveProfile }), withRouter, withAuthRedirect)(ProfileContainer)

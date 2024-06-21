@@ -2,6 +2,14 @@
 	grid-area: c;
 }
 
+.allData {
+	color: white;
+	display: flex;
+	background-color: #393836;
+	padding: 20px;
+	align-items: center;
+}
+
 .mainPicture {
 	width: 1000px;
 	height: 210px;
@@ -9,41 +17,77 @@
 }
 
 .userInfo {
-	font-size: 16px;
-	color: white;
+	display: flex;
+	align-items: center;
 }
 
 .userName {
 	font-size: 25px;
 	font-wight: bold;
+	margin-bottom: 10px;
 }
 
 .myAvatar {
 	width: 140px;
 	height: 140px;
-	margin-right: 50px;
+	margin-bottom: 5px;
 }
 
 .item {
-  color: gray;
+	color: gray;
 }
 
 .profileContainer {
 	display: flex;
-	background-color: #393836;
-	padding: 20px;
-	align-items: center;
+	gap: 100px;
+	justify-content: space-between;
 }
 
-.editMode {
-	margin: 5px 0 20px 0 
+.contacts {
+}
+
+.activateMode {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 .activateMode:hover {
-	background-color: #797776
+	background-color: #797776;
 }
 
-.deactivateModeInput {
-	display: block;
-	width: 100%
+.deactivateMode {
+	display: flex;
+	width: 100%;
+}
+
+.photoContainer {
+	margin: 10px 50px 20px 0;
+}
+
+.photoChange {
+	display: none;
+}
+
+.photoChangeButton {
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	padding: 6px 20px;
+	background-color: #393836;
+	cursor: pointer;
+}
+
+.photoChangeButton:hover {
+	background-color: white;
+	color: black
+}
+
+.formSummaryError
+{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+
 }

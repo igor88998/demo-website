@@ -2,13 +2,14 @@ import React, { memo } from 'react'
 import classes from './MyPosts.module.css'
 import Post from './post/Post'
 import MyPostsReduxForm from './myPostsForm/MyPostsForm'
+import userAvatar from '../../../assets/images/userAvatar.png'
 
 const MyPosts = ({ postsData, addPost }) => {
 
     let postsElements = postsData.map(post => {
         return <Post
             key={post.id}
-            image={'/UserAvatar.png'}
+            image={userAvatar}
             postName={post.postName}
             userName={post.userName}
             message={post.message}

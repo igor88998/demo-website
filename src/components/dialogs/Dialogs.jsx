@@ -4,6 +4,8 @@ import DialogItem from './dialogItem/DialogItem';
 import Message from './message/Message';
 import { Navigate } from 'react-router-dom';
 import DialogsReduxForm from './dialogsForm/DialogsForm';
+import friendAvatar from '../../assets/images/friendAvatar.png'
+import myAvatar from '../../assets/images/myAvatar.png'
 
 const Dialogs = ({ messagesPage, sendMessage, isAuth }) => {
 
@@ -14,7 +16,7 @@ const Dialogs = ({ messagesPage, sendMessage, isAuth }) => {
 
         const className = (isEven ? classes.left : classes.right)
 
-        const avatar = (isEven ? '/UserAvatar.png' : '/myAvatar.png')
+        const avatar = (isEven ? myAvatar : friendAvatar)
 
         const associatedDialog = messagesPage.dialogsData.find(dialog => dialog.id === message.id)
 

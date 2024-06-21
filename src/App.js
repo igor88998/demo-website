@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import React, { Suspense, useEffect } from 'react';
 import { connect } from 'react-redux';
@@ -14,6 +14,7 @@ import HeaderContainer from './components/header/HeaderContainer';
 import Login from './components/login/Login';
 
 const App = ({ initialized, initializeApp }) => {
+
 	useEffect(() => {
 		initializeApp();
 	}, [initializeApp]);
@@ -28,6 +29,7 @@ const App = ({ initialized, initializeApp }) => {
 			<NavbarContainer />
 			<div className="app-wrapper-content">
 				<Routes>
+					<Route path="/" element={<Navigate to="/profile" />} />
 					<Route
 						path="/profile/:userId?"
 						element={
@@ -53,6 +55,8 @@ const App = ({ initialized, initializeApp }) => {
 						}
 					/>
 					<Route path="/login/*" element={<Login />} />
+
+					<Route path="*" element={<div>404 NOT FOUND</div>} />
 				</Routes>
 			</div>
 		</div>
